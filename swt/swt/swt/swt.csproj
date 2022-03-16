@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FE2E334A-AAAB-49C4-B4CE-9583766CC70D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>swt</RootNamespace>
+    <AssemblyName>swt</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2021.1.326.40.Trial\Telerik.WinControls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2021.1.326.40.Trial\Telerik.WinControls.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2021.1.326.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2021.1.326.40.Trial\TelerikCommon.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WindowsFormsCalendar">
+      <HintPath>..\..\..\..\source\repos\SWT NEU\WindowsFormsCalendar.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeiteSupervisor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeiteSupervisor.Designer.cs">
+      <DependentUpon>SeiteSupervisor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Startseite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Startseite.Designer.cs">
+      <DependentUpon>Startseite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Urlaub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Urlaub.Designer.cs">
+      <DependentUpon>Urlaub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gleitzeit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gleitzeit.Designer.cs">
+      <DependentUpon>Gleitzeit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistiken.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistiken.Designer.cs">
+      <DependentUpon>Statistiken.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Zeitplan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zeitplan.Designer.cs">
+      <DependentUpon>Zeitplan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZeitplanNeu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZeitplanNeu.Designer.cs">
+      <DependentUpon>ZeitplanNeu.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeiteSupervisor.resx">
+      <DependentUpon>SeiteSupervisor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Startseite.resx">
+      <DependentUpon>Startseite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Urlaub.resx">
+      <DependentUpon>Urlaub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gleitzeit.resx">
+      <DependentUpon>Gleitzeit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistiken.resx">
+      <DependentUpon>Statistiken.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Zeitplan.resx">
+      <DependentUpon>Zeitplan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZeitplanNeu.resx">
+      <DependentUpon>ZeitplanNeu.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swtLOGO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Unbenannt-2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\102643.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-computer-icons-icon-design-vector-graphics-symbol--5b7f9e310fdb90.436917131535090225065.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
